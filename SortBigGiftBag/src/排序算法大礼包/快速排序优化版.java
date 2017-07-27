@@ -1,6 +1,6 @@
-package ÅÅĞòËã·¨´óÀñ°ü;
+package æ’åºç®—æ³•å¤§ç¤¼åŒ…;
 
-public class ¿ìËÙÅÅĞòÓÅ»¯°æ {
+public class å¿«é€Ÿæ’åºä¼˜åŒ–ç‰ˆ {
 
 	public void quickSort(int[] a,int n){
 		int start=0;
