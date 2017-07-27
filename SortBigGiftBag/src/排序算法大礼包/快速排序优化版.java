@@ -3,7 +3,9 @@ package 排序算法大礼包;
 public class 快速排序优化版 {
 
 	public void quickSort(int[] a,int n){
-		
+		int start=0;
+		int end=n-1;
+		sort(a,start,end);
 	}
 	
 	public void sort(int[] a,int start,int end){
