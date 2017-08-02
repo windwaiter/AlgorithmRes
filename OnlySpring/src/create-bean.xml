@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans    
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 四种注入方式 -->
+  <bean id="jyl" class="com.ty.spring.component.JuYaLing" c:_0="1" c:_1="s"/> 
+<!--  <bean id="jyl" class="com.ty.spring.component.JuYaLing" c:_i="s" c:_s="s"/>  -->
+<!--   <bean id="jyl" class="com.ty.spring.component.JuYaLing" c:i-ref="s" c:s-ref="s"/>   -->
+
+<!--  <bean id="jyl" class="com.ty.spring.component.JuYaLing" > -->
+<!--  <constructor-arg value="s"/> -->
+<!--  <constructor-arg value="s"/> -->
+<!--  </bean> -->
+ 
+</beans>

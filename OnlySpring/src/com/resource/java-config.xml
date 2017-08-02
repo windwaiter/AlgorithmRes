@@ -3,6 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:c="http://www.springframework.org/schema/c"
     xsi:schemaLocation="http://www.springframework.org/schema/beans    
-http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
-<!-- <bean id="magic" class="com.ty.spring.component.Magic"/> -->
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.ty.spring.config.CDPlayerConfig"/>
+<import resource="classpath:create-bean.xml"/>
+
 </beans>

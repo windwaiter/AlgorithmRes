@@ -9,7 +9,7 @@ public class SgtPappers implements CompactDisc{
 	private String title="wozhishiyigezilei";
 	private String artist="woyoushiyigeshuxing";
 	
-	@Bean(name="lonelyHeartsClubBand ")
+//	@Bean(name="cd")
 	public CompactDisc sgtPeppers(){
 		return new SgtPappers();
 	}

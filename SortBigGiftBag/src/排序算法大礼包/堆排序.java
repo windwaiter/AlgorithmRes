@@ -18,7 +18,7 @@ public class 堆排序 {
 	
 	private void heapAdjust(int[] a, int index, int length) {
 		int childleft=0;
-		int temp=a[index];
+		int temp=a[index]; 
 		for(;index*2+1<length;index=childleft){
 			childleft=index*2+1;
 			if(childleft<length-1&&a[childleft]<a[childleft+1]){
