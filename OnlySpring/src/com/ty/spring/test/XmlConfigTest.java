@@ -26,6 +26,5 @@ public class XmlConfigTest {
 	@Test
 	public void cdShouldNotBeNull(){
 		assertNotNull(cd);
-		cd.play();
 	}
 }

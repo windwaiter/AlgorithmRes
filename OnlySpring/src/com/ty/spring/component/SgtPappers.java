@@ -14,7 +14,7 @@ public class SgtPappers implements CompactDisc{
 		return new SgtPappers();
 	}
 	
-     public void play() {
+     public void play(int trackNumber) {
 		System.out.println(""+title+artist+"");
 	}
 

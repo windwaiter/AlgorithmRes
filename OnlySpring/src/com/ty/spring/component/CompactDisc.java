@@ -1,5 +1,5 @@
 package com.ty.spring.component;
 
 public interface CompactDisc {
-	void play();
+	void play(int trackNumber);
 }

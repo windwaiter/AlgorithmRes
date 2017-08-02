@@ -33,6 +33,5 @@ public class CDPlayerTest {
 	public void cdShouldNotBeNull(){
 		assertNotNull(cd);
 		assertNotNull(jyl);
-		cd.play();
 	}
 }
