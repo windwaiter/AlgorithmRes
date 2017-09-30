@@ -1,23 +1,27 @@
 package com.ty.spring.example.entity;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
+/**
+ * 抱歉大兄弟们，我的spring安全校验没有成功，等我造轮子吧
+ */
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
 
 @Component
 public class User {
 	
-	@NotNull
-	@Size(min=1,max=10)
 	private String username;
-	@NotNull
-	@Size(min=1,max=20)
+
 	private String password;
 	
+	private MultipartFile yourHeadImage;
+	
+	public MultipartFile getYourHeadImage() {
+		return yourHeadImage;
+	}
+	public void setYourHeadImage(MultipartFile yourHeadImage) {
+		this.yourHeadImage = yourHeadImage;
+	}
 	public String getUsername() {
 		return username;
 	}

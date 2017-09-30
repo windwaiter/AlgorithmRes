@@ -15,7 +15,6 @@ public class InsertSort {
             }
             A[j] = temp;
         }
-          
         return A;
     }
 }

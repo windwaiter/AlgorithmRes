@@ -28,7 +28,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <sf:form method="POST" commandName="user" action="login/loginindex">
 用户名：<sf:input path="username"/><br/>
 密码：<sf:password path="password"/><br/>
-<input type="submit" value="登录"/>
+<input type="submit" value="登录"/><br/>
+<a href="http://www.singlewindow.cn/singlewindow/table.jspx?area_id=230000"><b>中国国际单一窗口</b></a>
 </sf:form>
   </body>
 </html>

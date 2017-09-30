@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.test02.ty.itemcenter">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp/WEB-INF"/>
+        <dependent-module archiveName="com.test02.ty.itemcenter-api-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.test02.ty.itemcenter-api/com.test02.ty.itemcenter-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="com.test02.ty.itemcenter"/>
+        <property name="java-output-path" value="/com.test02.ty.itemcenter/target/classes"/>
+    </wb-module>
+</project-modules>

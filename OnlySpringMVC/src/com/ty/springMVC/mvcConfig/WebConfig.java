@@ -1,10 +1,8 @@
 package com.ty.springMVC.mvcConfig;
 
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -15,7 +13,11 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @ComponentScan("com.ty.spring.example")
 public class WebConfig extends WebMvcConfigurerAdapter{
-	
+	/**
+	 * 
+	 * @return
+	 * 视图解释器
+	 */
 	@Bean
 	public ViewResolver viewResolver(){
 		InternalResourceViewResolver resolver=new InternalResourceViewResolver();
@@ -34,10 +36,13 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 //		messageSource.setCacheSeconds(10);
 //		return messageSource;
 //	}
-
+    
+	
+	
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer){
 		configurer.enable();
 	}
+	
 	
 }

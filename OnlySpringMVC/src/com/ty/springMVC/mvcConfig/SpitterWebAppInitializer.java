@@ -1,5 +1,9 @@
 package com.ty.springMVC.mvcConfig;
 
+import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration.Dynamic;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class SpitterWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
@@ -17,6 +21,17 @@ public class SpitterWebAppInitializer extends AbstractAnnotationConfigDispatcher
 	@Override
 	protected String[] getServletMappings() {
 		return new String[]{"/"};
+	}
+	
+	@Override
+	protected Filter[] getServletFilters() {
+		return new Filter[]{};
+	}
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {
+		String location="E:\\FileTest";
+		registration.setMultipartConfig(new MultipartConfigElement(location));
 	}
 
 }

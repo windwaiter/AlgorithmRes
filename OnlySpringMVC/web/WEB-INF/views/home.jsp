@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,5 +7,11 @@
 <title>我是个欢迎页面！</title>
 </head>
 <body>
+<form method="post" action="file" enctype="multipart/form-data">
+<input type="text" name="username"/><br/>
+<input type="text" name="password"/><br/>
+<input type="file" name="yourHeadImage"><br/>
+<input type="submit" value="提交"/>
+</form>
 </body>
 </html>
